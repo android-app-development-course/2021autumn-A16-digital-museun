@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/background"
+    tools:context=".addArticle">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:adjustViewBounds="true"/>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_centerHorizontal="true">
+            <TextView
+                android:layout_marginTop="20dp"
+                android:textSize="20sp"
+                android:paddingStart="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="标题:"
+                android:layout_gravity="right"
+                />
+            <EditText
+                android:layout_marginTop="20dp"
+                android:id="@+id/articleTitle"
+                android:layout_width="match_parent"
+                android:paddingStart="10dp"
+                android:layout_height="50dp"
+                android:hint="输入你的帖子标题"
+                android:background="@drawable/editor_add_article"
+                android:maxLines="10"/>
+            <TextView
+                android:layout_marginTop="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="内容:"
+                android:paddingStart="5dp"
+                android:textSize="20sp" />
+            <EditText
+                android:layout_marginTop="20dp"
+                android:id="@+id/articleContent"
+                android:padding="10dp"
+                android:gravity="top"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:hint="输入你的帖子内容"
+                android:background="@drawable/editor_add_article"
+                android:maxLines="10"
+                />
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_centerHorizontal="true">
+            <Button
+                android:layout_marginTop="30dp"
+                android:id="@+id/fromAlbumBtn"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="本地选择图片"
+                android:textSize="15sp"
+                android:textColor="@color/white"
+                android:background="@drawable/botton_add_article"
+                />
+
+            <Button
+                android:layout_marginTop="30dp"
+                android:layout_marginStart="30dp"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:background="@drawable/botton_add_article"
+                android:id="@+id/handinArticle"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="发布"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</LinearLayout>

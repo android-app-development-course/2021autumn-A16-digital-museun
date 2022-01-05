@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#FBF7F3">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!--            <ImageButton-->
+            <!--                android:id="@+id/search"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="50dp"-->
+            <!--                android:layout_marginTop="10dp"-->
+            <!--                android:background="@drawable/edit" />-->
+
+            <EditText
+                android:id="@+id/search"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/find_input_box"
+                android:drawableLeft="@drawable/search"
+                android:hint="请输入展品关键字"
+                android:singleLine="true"
+                android:textSize="16dp" />
+
+            <com.youth.banner.Banner
+                android:id="@+id/banner"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="10dp"
+                app:image_scale_type="fit_center"
+                app:indicator_height="8dp"
+                app:indicator_margin="5dp"
+                app:indicator_width="8dp"
+                tools:ignore="MissingConstraints"/>
+
+            <ImageView
+                android:id="@+id/title1"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/title1" />
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/tang"
+                        android:layout_width="216dp"
+                        android:layout_height="143dp"
+                        android:background="@drawable/tang"/>
+
+                    <ImageButton
+                        android:id="@+id/yuan"
+                        android:layout_width="216dp"
+                        android:layout_height="143dp"
+                        android:layout_marginLeft="20dp"
+                        android:background="@drawable/yuan" />
+
+                    <ImageButton
+                        android:id="@+id/ming"
+                        android:layout_width="216dp"
+                        android:layout_height="143dp"
+                        android:layout_marginLeft="20dp"
+                        android:background="@drawable/ming"/>
+
+                    <ImageButton
+                        android:id="@+id/qing"
+                        android:layout_width="216dp"
+                        android:layout_height="143dp"
+                        android:layout_marginLeft="20dp"
+                        android:background="@drawable/qing"/>
+
+                    <ImageButton
+                        android:id="@+id/more1"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/more"/>
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <ImageView
+                android:id="@+id/title2"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:layout_marginLeft="17dp"
+                android:src="@drawable/title2"/>
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/mum1"
+                        android:layout_width="216dp"
+                        android:layout_height="143dp"
+                        android:background="@drawable/mum1"/>
+
+                    <ImageButton
+                        android:id="@+id/mum2"
+                        android:layout_width="216dp"
+                        android:layout_height="143dp"
+                        android:layout_marginLeft="20dp"
+                        android:background="@drawable/mum2" />
+
+                    <ImageButton
+                        android:id="@+id/mum3"
+                        android:layout_width="216dp"
+                        android:layout_height="143dp"
+                        android:layout_marginLeft="20dp"
+                        android:background="@drawable/mum3"/>
+
+                    <ImageButton
+                        android:id="@+id/mum4"
+                        android:layout_width="216dp"
+                        android:layout_height="143dp"
+                        android:layout_marginLeft="20dp"
+                        android:background="@drawable/mum4"/>
+
+                    <ImageButton
+                        android:id="@+id/more2"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/more"/>
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <ImageView
+                android:id="@+id/title3"
+                android:layout_width="300dp"
+                android:layout_height="160dp"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:src="@drawable/title3"/>
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp">
+
+                    <RelativeLayout
+                        android:id="@+id/view1"
+                        android:layout_width="216dp"
+                        android:layout_height="153dp"
+                        android:background="@drawable/imagebackground">
+
+                        <ImageView
+                            android:id="@+id/content1"
+                            android:layout_width="match_parent"
+                            android:layout_height="55dp"
+                            android:background="@drawable/content1"
+                            android:scaleType="fitXY" />
+
+                        <ImageView
+                            android:id="@+id/profile1"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_below="@+id/content1"
+                            android:background="@drawable/profile1"/>
+
+                        <TextView
+                            android:id="@+id/tv1"
+                            android:layout_width="100dp"
+                            android:layout_height="30dp"
+                            android:layout_below="@id/content1"
+                            android:layout_marginLeft="60dp"
+                            android:layout_marginTop="13dp"
+                            android:text="“王作”铜鼎"
+                            android:textColor="#000000"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:id="@+id/tv2"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_below="@id/tv1"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="5dp"
+                            android:text="春秋炊具。2001年洛阳市东周王城陵区内第27中春秋墓出土。立耳，平沿，浅腹，圜底。口沿下饰重环纹。腹壁铸铭文“王作..."
+                            android:textColor="#000000"
+                            android:textSize="10sp"/>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/view2"
+                        android:layout_width="216dp"
+                        android:layout_height="153dp"
+                        android:layout_marginLeft="20dp"
+                        android:background="@drawable/imagebackground">
+
+                        <ImageView
+                            android:id="@+id/content2"
+                            android:layout_width="match_parent"
+                            android:layout_height="55dp"
+                            android:background="@drawable/content2"
+                            android:scaleType="fitXY" />
+
+                        <ImageView
+                            android:id="@+id/profile2"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_below="@+id/content2"
+                            android:background="@drawable/profile2"/>
+
+                        <TextView
+                            android:id="@+id/tv3"
+                            android:layout_width="100dp"
+                            android:layout_height="30dp"
+                            android:layout_below="@id/content2"
+                            android:layout_marginLeft="60dp"
+                            android:layout_marginTop="13dp"
+                            android:text="考古小谷"
+                            android:textColor="#000000"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:id="@+id/tv4"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_below="@id/tv3"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="5dp"
+                            android:text="从1929年露出冰山一角，到1986年发现祭祀坑，再到各种精美文物出土，三星堆遗址的考古已经断断续续进行了八十多年，在这..."
+                            android:textColor="#000000"
+                            android:textSize="10sp"/>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/view3"
+                        android:layout_width="216dp"
+                        android:layout_height="153dp"
+                        android:layout_marginLeft="20dp"
+                        android:background="@drawable/imagebackground">
+
+                        <ImageView
+                            android:id="@+id/content3"
+                            android:layout_width="match_parent"
+                            android:layout_height="55dp"
+                            android:background="@drawable/content3"
+                            android:scaleType="fitXY" />
+
+                        <ImageView
+                            android:id="@+id/profile3"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_below="@+id/content3"
+                            android:background="@drawable/profile3"/>
+
+                        <TextView
+                            android:id="@+id/tv5"
+                            android:layout_width="100dp"
+                            android:layout_height="30dp"
+                            android:layout_below="@id/content3"
+                            android:layout_marginLeft="60dp"
+                            android:layout_marginTop="13dp"
+                            android:text="文化之梦"
+                            android:textColor="#000000"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:id="@+id/tv6"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_below="@id/tv5"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="5dp"
+                            android:text="唐三彩，是从唐墓挖掘出来的陶器之泛称，后来学者视为一种陶瓷分类上的术语。唐三彩并非专指那三种色彩而言。在唐墓中所..."
+                            android:textColor="#000000"
+                            android:textSize="10sp"/>
+
+                    </RelativeLayout>
+
+                    <ImageButton
+                        android:id="@+id/more3"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/more"/>
+
+                </LinearLayout>
+            </HorizontalScrollView>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

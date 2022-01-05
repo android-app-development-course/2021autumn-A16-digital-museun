@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.digital_museun">
 
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,6 +12,31 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Digital_museun">
+        <activity
+            android:name=".find"
+            android:exported="false" />
+        <activity
+            android:name=".article"
+            android:exported="false" />
+        <activity
+            android:name=".addArticle"
+            android:exported="false" />
+        <activity
+            android:name=".Register"
+            android:exported="false" />
+        <activity
+            android:name=".Login_by_Password"
+            android:exported="false" />
+        <activity
+            android:name=".relicDetail"
+            android:exported="false" />
+        <activity
+            android:name=".welcome"
+            android:exported="true">
+
+        </activity>
+
+
         <activity
             android:name=".MainActivity"
             android:exported="true">
